@@ -1,7 +1,6 @@
 const isEven = (num) => {
-  const parsed = parseInt(num, 10);
+  const parsed = parseFloat(num, 10);
+  console.log(parsed);
   if (isNaN(parsed)) return `${num} is not a number`;
   return parsed % 2 === 0;
 };
-
-console.log(isEven(""));
